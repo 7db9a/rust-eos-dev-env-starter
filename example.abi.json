@@ -1,6 +1,7 @@
 {
     "version": "eosio::abi/1.1",
     "types": []
+    "structs": []
     "ricardian_clauses": [],
     "variants": [],
     "abi_extensions": []
