@@ -10,8 +10,11 @@ cd your-eos-project/docker
 docker build -t rust-eos-dev:latest .
 docker volume create --name=example-nodeos-data-volume
 docker volume create --name=example-keosd-data-volume
+docker volume create --name=example-cargo-data-volume
 docker-compose up
 ```
+
+If you change the volume names (recommended if use this for multiple projects on your host machine), be sure to update the docker-compose.yml accordingly.
 
 Then from the top of your new project's directory:
 
