@@ -2,6 +2,8 @@
     "version": "eosio::abi/1.1",
     "types": [],
     "structs": [],
+    "actions": [],
+    "tables": [],
     "ricardian_clauses": [],
     "variants": [],
     "abi_extensions": []
