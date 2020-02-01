@@ -30,11 +30,11 @@ services:
     stop_grace_period: 10m
     env_file:
         - eos.env
-  project:
+  example:
     image: rust-eos-dev:latest
     volumes:
       - ../:/project
-      - project-cargo-dir:/usr/local/cargo
+      - example-cargo-dir:/usr/local/cargo
     tty: true
 
 volumes:
@@ -42,4 +42,4 @@ volumes:
    external: true
  keosd-data-volume:
    external: true
- project-cargo-dir:
+ example-cargo-dir:
