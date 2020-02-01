@@ -34,7 +34,7 @@ services:
     image: rust-eos-dev:latest
     volumes:
       - ../:/project
-      - example-cargo-dir:/usr/local/cargo
+      - example-cargo-data-volume:/usr/local/cargo
     tty: true
 
 volumes:
@@ -42,4 +42,5 @@ volumes:
    external: true
  example-keosd-data-volume:
    external: true
- example-cargo-dir:
+ example-cargo-data-volume:
+   external: true
