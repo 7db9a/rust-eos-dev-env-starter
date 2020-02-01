@@ -8,8 +8,8 @@ This environment uses EOSIO v1 and installs EOSIO software binaries instead of b
 git clone https://github.com/7db9a/rust-eos-dev-env-starter your-eos-project
 cd your-eos-project/docker
 docker build -t rust-eos-dev:latest .
-docker volume create --name=nodeos-data-volume
-docker volume create --name=keosd-data-volume
+docker volume create --name=example-nodeos-data-volume
+docker volume create --name=example-keosd-data-volume
 docker-compose up
 ```
 
