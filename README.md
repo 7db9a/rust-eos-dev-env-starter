@@ -14,7 +14,17 @@ docker volume create --name=example-cargo-data-volume
 docker-compose up
 ```
 
-If you change the volume names (recommended if use this for multiple projects on your host machine), be sure to update the docker-compose.yml accordingly.
+If you change the name from 'example' to 'your-eos-project', for example, the following files need to be updated:
+
+```
+dev.sh
+README.md
+docker/docker-compose.yml
+example.abi.json
+example.contracts.md
+testing/tests/basic_repo_operations.js
+```
+A simple search and replace will suffice. Be sure to rename the file names of example.abi.json and example.contracts.md, too.
 
 Then from the top of your new project's directory:
 
