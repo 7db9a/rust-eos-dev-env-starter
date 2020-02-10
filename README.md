@@ -30,7 +30,7 @@ Then from the top of your new project's directory:
 
 `./dev.sh wallet-create`
 
-Add the password to the `docker/eos.env`. The pub and priv key in the file is for development.
+Add the password to the `docker/eos.env`. The pub and priv keys in the file are for development.
 
 Restart the services:
 
@@ -58,3 +58,7 @@ The commands broken down individually:
 `./dev.sh test`
 
 `dev.sh` is very basic and not generalized. Feel free to modify it or make your own script, or just run the actual underlying commands.
+
+## Caveats
+
+The package name of your Cargo.toml will become the prefix fo the wasm binaries. See dev.sh and see the related commmands.
